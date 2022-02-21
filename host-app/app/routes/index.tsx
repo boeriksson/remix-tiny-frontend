@@ -1,4 +1,9 @@
-import {Link} from "@remix-run/react";
+import {Link} from "@remix-run/react"
+import styles from "./index.css"
+
+export function links() {
+    return [{ rel: "stylesheet", href: styles }]
+}
 
 export default function Index() {
     return (
@@ -7,6 +12,8 @@ export default function Index() {
             <ul>
                 <li>
                     This is from remix host!
+                </li>
+                <li>
                 </li>
                 <li>
                     <Link to="/ssr" className="">

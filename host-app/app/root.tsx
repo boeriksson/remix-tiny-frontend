@@ -5,11 +5,16 @@ import {
   Outlet,
   Scripts,
   ScrollRestoration
-} from "remix";
-import type { MetaFunction } from "remix";
+} from "remix"
+import type { MetaFunction } from "remix"
+import styles from "./root.css"
+
+export function links() {
+  return [{ rel: "stylesheet", href: styles }];
+}
 
 export const meta: MetaFunction = () => {
-  return { title: "New Remix App" };
+  return { title: "New Remix Host App" };
 };
 
 export default function App() {

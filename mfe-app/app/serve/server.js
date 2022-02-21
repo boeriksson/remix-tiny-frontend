@@ -11,6 +11,7 @@ app.get('/', (req, res) => {
 })
 
 app.get('/tiny/latest/:name/:version', (req, res) => {
+    res.set('Access-Control-Allow-Origin', '*')
     console.log(`tinyFrontendName: ${req.params.name} contractVersion: ${req.params.version}`)
     return res.json({
         "umdBundle": "example-tiny-frontend.umd.js",
@@ -19,6 +20,7 @@ app.get('/tiny/latest/:name/:version', (req, res) => {
 })
 
 app.get('/tiny/bundle/:bundleName', (req, res) => {
+    res.set('Access-Control-Allow-Origin', '*')
     res.sendFile(path.resolve(__dirname, `../dist/${req.params.bundleName}`));
 })
 

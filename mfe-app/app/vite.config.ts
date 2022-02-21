@@ -15,7 +15,7 @@ export default defineConfig({
             formats: ["umd"],
         },
         rollupOptions: {
-            ...rollupExternals,
+            ...rollupExternals
         },
     },
 });

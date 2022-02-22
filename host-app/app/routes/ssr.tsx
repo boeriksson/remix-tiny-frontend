@@ -1,13 +1,13 @@
 import { useState } from "react";
 import * as React from "react";
 
-import { ExampleTinyFrontendClient } from "~/exampleTinyFrontend/exampleTinyFrontend.client";
-import { ExampleTinyFrontendServer } from "~/exampleTinyFrontend/exampleTinyFrontend.server";
+import { ReactMFEClient } from "~/reactMFE/reactMFE.client";
+import { ReactMFEServer } from "~/reactMFE/reactMFE.server";
 import {Link} from "@remix-run/react";
 
 export default function Ssr() {
     const ExampleTinyFrontend =
-        ExampleTinyFrontendClient || ExampleTinyFrontendServer;
+        ReactMFEClient || ReactMFEServer;
 
     const [counter, setCounter] = useState(0);
 

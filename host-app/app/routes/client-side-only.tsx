@@ -1,19 +1,18 @@
 import {
-    ExampleTinyFrontendType,
-    loadExampleTinyFrontendClient,
-} from "@tiny-frontend/example-tiny-frontend-contract";
-import { useEffect, useState } from "react";
-import * as React from "react";
-import {Link} from "@remix-run/react";
+    ReactMFEType,
+    loadReactMFEClient
+} from "react-mfe-contract"
+import { useEffect, useState } from "react"
+import {Link} from "@remix-run/react"
 
 export default function ClientSideOnly() {
     const [ExampleTinyFrontend, setExampleTinyFrontend] =
-        useState<ExampleTinyFrontendType>();
+        useState<ReactMFEType>();
 
     const [counter, setCounter] = useState(0);
 
     const loadTinyFrontend = async () => {
-        const ExampleTinyFrontend = await loadExampleTinyFrontendClient(
+        const ExampleTinyFrontend = await loadReactMFEClient(
             "http://localhost:5555"
         );
 

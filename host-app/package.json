@@ -11,7 +11,7 @@
   "dependencies": {
     "@remix-run/react": "^1.2.1",
     "@remix-run/serve": "^1.2.1",
-    "@tiny-frontend/example-tiny-frontend-contract": "file:../mfe-app/contract/tiny-frontend-example-tiny-frontend-contract-0.0.1.tgz",
+    "react-mfe-contract": "file:../react-mfe/contract/react-mfe-contract-0.0.3.tgz",
     "cross-env": "^7.0.3",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",

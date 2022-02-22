@@ -8,12 +8,12 @@ import React from "react";
 import type exportedModule from "../../app/lib/index";
 import { tinyFrontendName, version } from "../package.json";
 
-export type ExampleTinyFrontendType = typeof exportedModule;
+export type ReactMFEType = typeof exportedModule;
 
-export const loadExampleTinyFrontendServer = async (
+export const loadReactMFEServer = async (
     tinyApiEndpoint: string
-): Promise<TinyFrontendServerResponse<ExampleTinyFrontendType>> =>
-    await loadTinyFrontendServer<ExampleTinyFrontendType>({
+): Promise<TinyFrontendServerResponse<ReactMFEType>> =>
+    await loadTinyFrontendServer<ReactMFEType>({
         tinyApiEndpoint,
         name: tinyFrontendName,
         contractVersion: version,
@@ -22,10 +22,10 @@ export const loadExampleTinyFrontendServer = async (
         },
     });
 
-export const loadExampleTinyFrontendClient = async (
+export const loadReactMFEClient = async (
     tinyApiEndpoint: string
-): Promise<ExampleTinyFrontendType> =>
-    await loadTinyFrontendClient<ExampleTinyFrontendType>({
+): Promise<ReactMFEType> =>
+    await loadTinyFrontendClient<ReactMFEType>({
         tinyApiEndpoint,
         name: tinyFrontendName,
         contractVersion: version,

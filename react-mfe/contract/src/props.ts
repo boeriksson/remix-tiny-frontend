@@ -1,4 +1,4 @@
-export interface ExampleTinyFrontendProps {
+export interface ReactMFEProps {
     name: string
     onCounterChange?: (counter: number) => void
 }

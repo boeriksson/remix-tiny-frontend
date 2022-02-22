@@ -7,8 +7,8 @@ export default defineConfig({
     build: {
         lib: {
             entry: "./src/main.ts",
-            name: "exampleTinyFrontendContract",
-            fileName: (format) => `example-tiny-frontend-contract.${format}.js`,
+            name: "reactMfeContract",
+            fileName: (format) => `react-mfe-contract.${format}.js`,
         },
         rollupOptions: {
             ...rollupExternals,

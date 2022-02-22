@@ -14,12 +14,13 @@ app.get('/tiny/latest/:name/:version', (req, res) => {
     res.set('Access-Control-Allow-Origin', '*')
     console.log(`tinyFrontendName: ${req.params.name} contractVersion: ${req.params.version}`)
     return res.json({
-        "umdBundle": "example-tiny-frontend.umd.js",
-        //"cssBundle": "tinyFrontend-css-bundle-name.css" // Optional
+        "umdBundle": "react-mfe.umd.js",
+        "cssBundle": "react-mfe.css" // Optional
     })
 })
 
 app.get('/tiny/bundle/:bundleName', (req, res) => {
+    console.log('bundleName: ', req.params.bundleName)
     res.set('Access-Control-Allow-Origin', '*')
     res.sendFile(path.resolve(__dirname, `../dist/${req.params.bundleName}`));
 })

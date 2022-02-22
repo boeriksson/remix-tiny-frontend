@@ -1,7 +1,7 @@
 {
-  "name": "@tiny-frontend/example-tiny-frontend-contract",
-  "version": "0.0.1",
-  "tinyFrontendName": "ExampleTinyFrontend",
+  "name": "react-mfe-contract",
+  "version": "0.0.3",
+  "tinyFrontendName": "React-MFE",
   "scripts": {
     "dev": "vite",
     "build": "vite build && tsc --emitDeclarationOnly",
@@ -11,12 +11,12 @@
   "files": [
     "dist"
   ],
-  "main": "./dist/example-tiny-frontend-contract.umd.js",
-  "module": "./dist/example-tiny-frontend-contract.es.js",
+  "main": "./dist/react-mfe-contract.umd.js",
+  "module": "./dist/react-mfe-contract.es.js",
   "exports": {
     ".": {
-      "import": "./dist/example-tiny-frontend-contract.es.js",
-      "require": "./dist/example-tiny-frontend-contract.umd.js"
+      "import": "./dist/react-mfe-contract.es.js",
+      "require": "./dist/react-mfe-contract.umd.js"
     }
   },
   "dependencies": {

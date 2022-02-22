@@ -1,0 +1,29 @@
+.container {
+    border: 1px solid #222;
+    background-color: #e17787;
+    padding: 1rem;
+    width: 200px;
+}
+
+.container a {
+    border-bottom: 2px solid #e17787;
+    transition: border-bottom-color 150ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.container a:hover {
+    border-bottom-color: #ffb1c8;
+}
+
+.container > * + * {
+    margin-top: 1rem;
+}
+
+.title {
+    font-size: 1rem;
+    font-weight: bold;
+    color: black;
+}
+
+.descriptionContainer > * + * {
+    margin-top: 0.5rem;
+}

@@ -1,8 +1,8 @@
 import { hydrate } from "react-dom";
 import { RemixBrowser } from "remix";
 
-import { ensureExampleTinyFrontendLoadedClient } from "~/exampleTinyFrontend/exampleTinyFrontend.client";
+import { ensureReactMFELoadedClient } from "~/reactMFE/reactMFE.client";
 
-ensureExampleTinyFrontendLoadedClient().then(() =>
+ensureReactMFELoadedClient().then(() =>
     hydrate(<RemixBrowser />, document)
 );

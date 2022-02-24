@@ -15,6 +15,7 @@ const SmallComponent = () => {
             "http://localhost:5555"
         );
 
+        debugger
         setMFE(() => loadedMFE);
     }
 

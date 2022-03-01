@@ -8,7 +8,9 @@ const ReactMFE: React.FC<ReactMFEProps> = ({
     }) => {
     const [value, setValue] = useState(0);
 
-    useEffect(() => onCounterChange?.(value), [value, onCounterChange]);
+    useEffect(() => {
+        onCounterChange?.(value)
+    }, [value, onCounterChange]);
 
     return (
         <div className={styles.container}>
@@ -20,7 +22,9 @@ const ReactMFE: React.FC<ReactMFEProps> = ({
                 </p>
             </div>
 
-            <button onClick={() => setValue((value) => value + 1)}>Click</button>
+            <button onClick={() => {
+                setValue((value) => value + 1)
+            }}>Click</button>
         </div>
     );
 };
